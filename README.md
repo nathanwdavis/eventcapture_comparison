@@ -3,6 +3,8 @@ eventcapture comparison
 
 Comparison of Python, Go, and Clojure implementations of a simple HTTP service to capture and store generic event data.
 
+Since the goal is just to compare, the requirements are simplified and the implementations are mostly done with one main source file.
+
 Basic Requirements:
 -------------------
 
@@ -18,3 +20,12 @@ Basic Requirements:
 - Should set the timeutc column to the current time UTC (unless timeutc is passed in on the request). It should preferrably rely on the DB to do this.
 
 - Should use the provided SQL function to perform the insert (mainly just to test for good support for SQL functions)
+
+Web Frameworks/Libraries
+----------
+
+Clojure -> Compojure
+
+Golang -> *TBD*
+
+Python -> Flask
