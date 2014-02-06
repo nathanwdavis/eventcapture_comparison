@@ -21,6 +21,8 @@ Basic Requirements:
 
 - Should use the provided SQL function to perform the insert (mainly just to test for good support for SQL functions)
 
+- Should respond with some constant string when requesting the root ('/') so that it could be PINGd for up/down status
+
 Web Frameworks/Libraries
 ----------
 
