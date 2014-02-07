@@ -24,7 +24,8 @@
                      (:user_ref event-map)
                      (:data event-map)]
                :row-fn :id
-               :result-set-fn first)))
+               :result-set-fn first))
+  "")
 
 (defn handle-event-post [event-type ext-ref user-ref data]
   {:pre [(string? event-type) 
