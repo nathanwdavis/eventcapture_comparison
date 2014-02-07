@@ -24,10 +24,17 @@ Basic Requirements:
 - Should respond with some constant string when requesting the root ('/') so that it could be PINGd for up/down status
 
 Web Frameworks/Libraries
-----------
+------------------------
 
 Clojure -> Compojure
 
-Golang -> *TBD*
+Golang -> Martini
 
 Python -> Flask
+
+Setup Instructions
+------------------
+
+1. Have a Postgres v9.3 or higher running on you localhost.
+2. Execute 'init.sql' against your local Postgres server (this will create a user and an `event` database)
+3. Execute 'create_eventlog_table.sql' in the context of the `event` database.
