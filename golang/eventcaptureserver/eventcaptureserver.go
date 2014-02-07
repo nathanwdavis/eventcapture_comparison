@@ -70,7 +70,7 @@ func main() {
 	Db = dbSetup()
 
 	m := martini.New()
-	m.Use(martini.Logger())
+	//m.Use(martini.Logger())
 	m.Use(martini.Recovery())
 	m.Action(routes().Handle)
 	m.Run()
