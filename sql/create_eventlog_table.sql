@@ -22,10 +22,10 @@ END; $$;
 -- a function to help in doing inserts
 CREATE OR REPLACE FUNCTION insert_eventlog
     (
-      et varchar(200),
-      er varchar(200),
-      ur varchar(200),
-      d varchar
+        et varchar(200),
+        er varchar(200),
+        ur varchar(200),
+        d varchar
     ) RETURNS int AS $$
 
     INSERT INTO eventlog (event_type, ext_ref, user_ref, data)
