@@ -36,7 +36,7 @@ func handleCapture(req *http.Request, params martini.Params) (string, int) {
 		req.PostFormValue("user_ref"), data}
 	if err := event.Save(); err != nil {
 		fmt.Println(err)
-		return "Event capture failed", 500
+		return "Event capture failed\n", 500
 	}
 	return "", 204
 }
