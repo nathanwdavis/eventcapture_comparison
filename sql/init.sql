@@ -1,5 +1,3 @@
--- -*- sql-product: postgres -*-
-
 DO $$ BEGIN
     --create user for the eventcapture apps
     IF NOT EXISTS (SELECT * FROM pg_catalog.pg_user WHERE usename = 'eventcaptureuser') THEN

@@ -1,5 +1,3 @@
--- -*- sql-product: postgres -*-
-
 DO $$ BEGIN
     IF NOT EXISTS (SELECT * FROM pg_tables WHERE tablename = 'eventlog') THEN
         -- create the eventlog table
