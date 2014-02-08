@@ -63,6 +63,8 @@ func dbSetup() *sql.DB {
 	if err != nil {
 		panic(err)
 	}
+	db.SetMaxIdleConns(100)
+	db.SetMaxOpenConns(100)
 	return db
 }
 

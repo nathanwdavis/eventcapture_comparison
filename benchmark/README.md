@@ -25,19 +25,19 @@ Percentage of the requests served within a certain time (ms)
 
 Golang result:
 ```
-Time taken for tests:   0.753 seconds
+Time taken for tests:   0.171 seconds
 Complete requests:      1000
 Failed requests:        0
-Requests per second:    1327.71 [#/sec] (mean)
+Requests per second:    5845.49 [#/sec] (mean)
 
 Percentage of the requests served within a certain time (ms)
-  50%     37
-  66%     45
-  75%     50
-  80%     52
-  90%     60
-  95%     66
-  98%     70
-  99%     71
- 100%     94 (longest request)
+  50%      8
+  66%      9
+  75%     10
+  80%     11
+  90%     12
+  95%     13
+  98%     14
+  99%     14
+ 100%     17 (longest request)
 ```
