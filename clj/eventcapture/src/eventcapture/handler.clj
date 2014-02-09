@@ -33,7 +33,7 @@
               ;; allow connections to be idle for 3 hours (default is 60 minutes):
               (.setIdleMaxAgeInMinutes (* 3 60))
               ;; consult the BoneCP documentation for your database:
-              (.setConnectionTestStatement "/* ping *\\/ SELECT 1"))] 
+              (.setConnectionTestStatement "/* ping *\\/ SELECT 1"))]
     {:datasource cpds}))
 (def pooled-db (delay (pool db-spec)))
 
@@ -51,7 +51,7 @@
   "")
 
 (defn handle-event-post [event-type ext-ref user-ref data]
-  {:pre [(string? event-type) 
+  {:pre [(string? event-type)
          (not (strings/blank? event-type))
          (string? data)
          (json/read-str data)]}
@@ -62,8 +62,8 @@
 
 (defroutes app-routes
   (GET "/" [] "It works!")
-  (POST "/capture" [event-type ext-ref user-ref data]
-        (handle-event-post event-type ext-ref user-ref data))
+  (POST "/capture" [event_type ext_ref user_ref data]
+        (handle-event-post event_type ext_ref user_ref data))
   (route/resources "/")
   (route/not-found "Not Found"))
 
