@@ -35,6 +35,7 @@
               ;; consult the BoneCP documentation for your database:
               (.setConnectionTestStatement "/* ping *\\/ SELECT 1"))]
     {:datasource cpds}))
+
 (def pooled-db (delay (pool db-spec)))
 
 (defn db-connection [] @pooled-db)
